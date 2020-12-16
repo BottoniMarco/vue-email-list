@@ -11,7 +11,9 @@
   </head>
   <body>
     <div id="root">
-      <h3 class="email" v-for="email in emails"> {{ email }} </h3>
+      <div class="email"  v-for="email in emails" v-if="emails.length == 10">
+        <p>{{ email }}</p>
+      </div>
     </div>
 
     <script src="js/script.js" charset="utf-8"></script>
